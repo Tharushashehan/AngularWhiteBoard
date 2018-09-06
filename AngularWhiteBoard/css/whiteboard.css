@@ -1,0 +1,172 @@
+
+/* Css for whiteboard */
+/* #canvas {
+    width: 1000;
+    height: 1000;
+    margin: 0px;
+    border: 0;
+    overflow: hidden; 
+    display: block;  
+    
+    
+  } */
+
+  #canvas{
+    border-bottom: 1px solid rgba(0,0,0,0.3); 
+    background-color: #FFF;
+    box-shadow: 0 9px 20px -5px rgba(0,0,0,0.8);
+    
+  }
+
+  
+/* Css for bottom icon bar */
+body {margin:0;}
+
+.icon-bar {
+    width: 50%;
+    background-color: rgba(25, 0, 0, 0.5);
+    overflow: auto;
+    margin: auto;
+    bottom: 5px;
+    position: fixed;
+    padding: 5px;
+    left: 25%;
+    
+    /* #555;   rgba(255, 0, 0, 0.5); */
+}
+
+.icon-bar button {
+    float: left;
+    width: 10%;
+    text-align: center;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+    background-color: #4CAF50; 
+}
+
+.icon-bar button:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #4CAF50 !important;
+}
+
+
+
+
+/* Css for top tool bar */
+body {margin:0;}
+
+.top-tool-bar {
+    width: 100%;
+    background-color: #555; 
+    overflow: auto;
+    margin: auto;
+    
+    position: fixed; 
+    padding: 5px;
+    top: 5px;
+    /* left: 25%; */
+    /* #555; */
+
+    
+ 
+}
+
+.top-tool-bar button {
+    float: left;
+    width: 10%;
+    text-align: center;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+    background-color: transparent; 
+}
+
+.top-tool-bar button:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #4CAF50 !important;
+}
+
+/* .top-tool-bar .btn-group-color button {
+
+    height: 20px;
+    width: 20px;
+}
+
+.top-tool-bar .btn-group-color #red {
+    background-color: red; 
+}
+.top-tool-bar .btn-group-color #green {
+    background-color: green; 
+}
+.top-tool-bar .btn-group-color #blue {
+    background-color: blue; 
+}
+.top-tool-bar .btn-group-color #yellow {
+    background-color: yellow; 
+}
+.top-tool-bar .color-group {
+    background-color: transparent; 
+    width: 80px;
+    text-align: center;
+    
+
+} */
+
+.top-tool-bar .color-group select {
+    background-color: teal;
+    
+    height: 50px;
+}
+.top-tool-bar .color-group select option {
+    
+    height: 50px;
+}
+
+/* #colorSwatch {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+
+input[type=radio] {
+	margin: 0;
+	display: none;
+	width: 0;
+}
+input[type=radio]:checked + label::after {
+	content: '\2712';
+	position: absolute;
+	left: 8px;
+}
+label {
+	display: inline-block; 
+	width: 48px; height: 48px; 
+	position: relative;
+	padding-right: 5px;
+	border-radius: 50%;
+	text-shadow: 1px 1px 2px #000;
+	color: #fff;
+	font-size: 32px;
+	line-height: 46px;
+}
+label[for=color01] {background: gold;}
+label[for=color02] {background: darkorange;}
+label[for=color03] {background: navy;}
+label[for=color04] {background: yellowgreen;}
+label[for=color05] {background: firebrick;}
+label[for=color06] {background: powderblue;} */
+
+
+
+ 
+
