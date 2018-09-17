@@ -1,20 +1,70 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<div class="back-look">
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+  <!-- <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="> -->
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+
+
+
+       
+	<canvas class="new-canvas" id="canvas" drawing ></canvas>
+	
+
+
+
+
+
+	<div class="top-tool-bar">
+			<!-- <div class="color-group" ng-controller="colorCtrl"> -->
+					<label id="color" >Color</label>
+
+
+					
+
+			<select ng-change="GetColor()" ng-model="selected">
+					<option value="black" style="background-color: black" selected="selected">black</option>
+					<option value="blue" style="background-color: blue" >blue</option>
+					<option value="red" style="background-color: red">red</option>
+					<option value="green" style="background-color: green">green</option>
+					<option value="yellow" style="background-color: yellow">yellow</option>
+					<option value="gray" style="background-color: gray">gray</option>
+				</select>
+				<br/>
+				<br/>
+				<br/>
+			<label id="color" >  Line Width</label>
+				
+			<select ng-change="GetWidth()" ng-model="selected">
+					<option value="1">1</option>
+					<option value="3" selected="selected">3</option>
+					<option value="5">5</option>
+					<option value="7">7</option>
+					<option value="9">9</option>
+					<option value="11">11</option>
+			</select>
+
+	</div>
+	
+
+   
+	<div class="icon-bar" ng-controller="pencliCtrl">
+		<button type="button" ng-click="getPencil()"><i class="fa fa-pencil" ></i></button>
+		<button type="button"><i class="fa fa-paint-brush"></i></button>
+		<button type="button"><i class="fa fa-eraser"></i></button>
+		<button type="button"><i class="fa fa-globe"></i></button>
+        <button type="button"><i class="fa fa-trash"></i></button>
+        
+	
+	  </div>
+
+	  	 
+	  </div>
+	
+      
+
+      
 
