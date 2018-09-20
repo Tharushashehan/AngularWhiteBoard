@@ -11,15 +11,15 @@
 
 
        
-	<canvas class="new-canvas" id="canvas" drawing ></canvas>
+	<!-- <canvas class="new-canvas" id="canvas" drawing ></canvas> -->
 	
 
 
 
-
+<!-- 
 
 	<div class="top-tool-bar">
-			<!-- <div class="color-group" ng-controller="colorCtrl"> -->
+			<div class="color-group" ng-controller="colorCtrl">
 					<label id="color" >Color</label>
 
 
@@ -63,6 +63,38 @@
 
 	  	 
 	  </div>
+ -->	  
+	 <!--  <canvas-whiteboard
+	  class="new-canvas" #canvasWhiteboard
+                     [drawButtonClass]="'drawButtonClass'"
+                     [drawButtonText]="'Draw'"
+                     [clearButtonClass]="'clearButtonClass'"
+                     [clearButtonText]="'Clear'"
+                     [undoButtonText]="'Undo'"
+                     [undoButtonEnabled]="true"
+                     [redoButtonText]="'Redo'"
+                     [redoButtonEnabled]="true"
+                     [colorPickerEnabled]="true"
+                     [saveDataButtonEnabled]="true"
+                     [saveDataButtonText]="'Save'"
+                     [lineWidth]="5"
+                     [strokeColor]="'rgb(0,0,0)'"
+                     [shouldDownloadDrawing]="true"
+                     (onBatchUpdate)="sendBatchUpdate($event)"
+                     (onClear)="onCanvasClear()"
+                     (onUndo)="onCanvasUndo($event)"
+                     (onRedo)="onCanvasRedo($event)">
+                     
+                     
+</canvas-whiteboard> -->
+
+<canvas-whiteboard  class="new-canvas" #canvasWhiteboard
+                   [options]="canvasOptions"
+                   (onBatchUpdate)="onCanvasDraw($event)"
+                   (onClear)="onCanvasClear()"
+                   (onUndo)="onCanvasUndo($event)"
+                   (onRedo)="onCanvasRedo($event)">
+</canvas-whiteboard>
 	
       
 
